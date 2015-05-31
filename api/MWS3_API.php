@@ -41,7 +41,7 @@ class MWS3CredsAPI extends ApiBase {
                 $role = $r->getResponseBody();
             $r = new HttpRequest('http://169.254.169.254/latest/meta-data/iam/security-credentials/'.$role, HttpRequest::METH_GET);
             $r->send();
-            $this->getResult()->addValue(array($this->ACTION_NAME, 'results'), 'items', $r->getResponseBody(););  
+            $this->getResult()->addValue(array($this->ACTION_NAME, 'result'), 's3creds', $r->getResponseBody());  
             }
         } catch (HttpException $ex) {
             echo $ex;

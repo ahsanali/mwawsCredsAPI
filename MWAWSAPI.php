@@ -15,7 +15,7 @@ global $wgExtensionCredits;
 $wgExtensionCredits['s3creds'][] = array(
 	'path' => __FILE__,
 	'name' => 'SMWAskAPI',
-	'version' => SMWASKAPI_VERSION,
+	'version' => MWAWSAPI_VERSION,
 	'author' => array( '[Muhammad Ahsan Ali]' ),
 	'url' => 'https://github.com/ahsanali/mwawsCredsAPI/',
 	'description' => 'API for fetching aws credentials'
